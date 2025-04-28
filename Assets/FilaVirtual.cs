@@ -38,7 +38,8 @@ public class FilaVirtual : MonoBehaviour
             {
                 if (premium == true)
                 {
-                    Debug.Log($"Tipo de entrada: Premium - Cantidad: {cantEntrada} - Precio total: ${(cantEntrada * 2000)*1.5}");
+                    Debug.Log($"Tiene un recargo de ${cantEntrada * 2000 * 1.15 - cantEntrada * 2000} por prioridad en la compra");
+                    Debug.Log($"Tipo de entrada: Premium - Cantidad: {cantEntrada} - Precio total: ${(cantEntrada * 2000)*1.15}");
 
                 }
                 else
